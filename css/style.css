@@ -73,32 +73,35 @@ li a {
     width: 600px;
     height: 50px;
     display: block;
- position: fixed;
+    position: fixed;
+    top: 15px;;
     padding-left: 50px;
    
 
 }
 .home-content {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
 
+    margin-top: 200px;
+    
+ 
+}
+img {
+width: 50px;
+height: 50px;
+}
 .home-content>h1 {
 
     font-size: 500%;
     text-align: center;
     color: white;
     text-shadow: wheat;
- font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.071;
     text-shadow: 0 0 20px rgb(0 0 0 / 50%);
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-weight: bold;  
+    float: auto;
 
 }
 
@@ -113,6 +116,7 @@ li a {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+
 
 
 }

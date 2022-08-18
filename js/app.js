@@ -27,5 +27,8 @@ function teste(){
 }
 
 window.onload = function(){ 
+
+    $("#home-bt").addClass("active").attr("style","color:black");
+
     window.setInterval(teste, 2000);
 }

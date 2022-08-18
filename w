@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcomeu!</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\style.css">
-
-</head>
-
-<body>
-
-   
-
-     <div class="svg" id="svg"> </div>
-     <div class="content" id="content">
-       
+     
         <section class="home" id="home">
 
 
@@ -57,13 +37,13 @@
                     </p>
     
                     <a class="button stroke smoothscroll" href="#about" title="Saiba Mais">Saiba Mais</a>
-                   
+    
                 </center>
     
             </div>
-       
+    
         </section>
-       
+    
         <section class="about" id="about">
             <div class="row">
     
@@ -105,7 +85,6 @@
     
     
         </section>
-
         <section class="portfolio" id="portfolio">
             <div class="row">
     
@@ -128,78 +107,5 @@
     
     
         </section>
-
-
-     </div>
     
-
-
-
-
-
- 
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-    <script src="js\script.js" async defer></script>
-</body>
-
-
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script>
-
-
- svg = d3.select("#svg").append("svg").attr("height", 900).attr("width", window. screen. width).attr('stroke', 'white').attr('stroke-width', 1);
-
-svg.attr('fill','red');
-
-
-
-
-var arr=[];
-
-
-for(let i=0;i<10000;i++){
-
-var rx= Math.floor(Math.random() * 2000);
-var ry= Math.floor(Math.random() * 900);
-var size= Math.floor(Math.random() * 3)/10;
-arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
-
-
-
-}
-for(let i=0;i<5000;i++){
-
-var rx= Math.floor(Math.random() * 2000);
-var ry= Math.floor(Math.random() * 900);
-var size= Math.floor(Math.random() * 5)/100;
-arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
-
-
-
-}
-for(let i=0;i<1000;i++){
-
-var rx= Math.floor(Math.random() * 2000);
-var ry= Math.floor(Math.random() * 900);
-var size= Math.floor(Math.random() * 10)/10;
-arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
-
-
-
-}
-
-
-
-</script>
-<script src="js\app.js"> </script>
-
-</html>
+             

@@ -1,51 +1,120 @@
-html,.container-lg,body{
-    background-color: FloralWhite;
+
+
+@font-face {
+    font-family: 'starwars';
+    src: url('C:\Github\My Site\My-Portfolio-Web-Site-\fonts\star-jedi\Starjedi.ttf') format('truetype');
+  }
+
+
+/*#region html*/
+html{
+    scroll-behavior:auto;
+}
+body {
+    overflow: auto;
+   
+    overflow-x: hidden;
+ 
 
 }
-a{
-color: Gainsboro;
-text-align: center;
-text-decoration: none;
-display: block;
-font-family:Lucida Console;
+p {
+    margin-top: 20px;
+
+
 }
 
-#x1{
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+a {
+    color: Gainsboro;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-family: Lucida Console;
+}
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+
+    color: Gainsboro;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Lucida Console;
+
+}
+/*#region html*/
+
+/*#endregion row*/
+
+/*#endregion row*/
+
+/*#region Row*/
+.row {
+    padding-right: 50px;
+}
+/*#endregion Row*/
+
+/*#region Home*/
+.home {
     width: auto;
-     height: 900px;
-     display: block;
-background-image: url("../content/px6.jpg");
-background-repeat: no-repeat;
-Background-size:cover;
-background-position:center;
-
+    height: 900px;
+    display: block;
+    background-color:  rgba(25, 0, 0, 0.2);
 
 
 
 }
-#pri{
-    padding-top : 150px;
 
-}
-#pri>h1,.name{
+.home-navbar {
+    padding-top: 15px;
+    width: 600px;
+    height: 50px;
+    display: block;
+ position: fixed;
+    padding-left: 50px;
    
-font-size: 500%;
-text-align: center;
-color: white;
-text-shadow: wheat;
-font-family: "poppins-medium", sans-serif;
-line-height: 1.071;
-text-shadow: 0 0 20px rgb(0 0 0 / 50%);
-margin-inline-start: 0px;
-margin-inline-end: 0px;
-font-weight: bold;
 
 }
-#pri>h5{
-   
+.home-content {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.home-content>h1 {
+
+    font-size: 500%;
+    text-align: center;
+    color: white;
+    text-shadow: wheat;
+ font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.071;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.home-content>h5 {
+
     font-size: 250%;
     text-align: center;
-    color:  #00768C;
+    color: #00768C;
     font-family: "poppins-bold", sans-serif;
     line-height: 1.565;
     text-shadow: 0 0 6px rgb(0 0 0 / 20%);
@@ -53,144 +122,143 @@ font-weight: bold;
     margin-inline-end: 0px;
     font-weight: bold;
 
- 
-    }
-    
-    .intro-position>span{
-        font-family: "lora-regular", serif;
-        font-size: 1.5rem;
-        line-height: 2.4rem;
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-        color: #FFFFFF;
-        text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-
-    }
-
-
-    #pri .intro-position span::after {
-        content: "|";
-        text-align: center;
-        display: inline-block;
-        padding: 0 8px 0 14px;
-        color: rgba(255, 255, 255, 0.3);
-    }
-    #pri .intro-position span:first-child::before {
-        content: "|";
-        text-align: center;
-        display: inline-block;
-        padding: 0 14px 0 8px;
-        color: rgba(255, 255, 255, 0.3);
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      
-      }
-
-      li {
-       float: left;
-       text-align: center;
-      }
-      
-      li a {
- 
-        color: Gainsboro;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        display: block;
-        font-family:Lucida Console;
-        
-      }
-
-#teste{
-padding-top: 15px;
-width: 600px;
-height: 50px;
-display: block;
-
-padding-left: 50px;
-
-      }
- /* a:hover{
-    color: black;
-    background-color: lightsteelblue;
-   
-
-} */
-.active{
-    color: black;
-    background-color: white;
-   
-
-}
-#teste{
-
-position: fixed;
 
 }
 
-#x1{
-height: 900px;
-display: block;
-background-color: burlywood;
+.home-sumary>span {
+    font-family: "lora-regular", serif;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
 }
-#x2{
+
+
+.home-content .home-sumary span::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 8px 0 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.home-content .home-sumary span:first-child::before {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/*#endregion Home */
+
+/*#region About*/
+
+.about {
+    text-align: center;
+    color: white;
+    width: auto;
     height: 800px;
-    display: block;  
+    display: block;
+    background-color:  rgba(40, 0, 0, 0.2);
+
+    background-repeat: no-repeat;
+    Background-size: cover;
+    background-position: center;
 
 }
-#x3{
-    height: 900px;
-    display: block; 
-  background-color: darkgreen;
-}
-#x4{
-    height: 900px;
-display: block;
-background-color: darkslateblue;
-}
-
-#footer{
-    height: 900px;
-display: block;
-background-color: yellow;
-}
+.about .left-side {
 
 
-#tcl{
-
- 
-    margin-top: 100px;
+    margin-top: 75px;
     height: 600px;
-    padding-top:110px;
-display: block;
-border-right: gray 2px solid;
-background-color: FloralWhite;
+    padding-top: 110px;
+    display: block;
+    border-right: gray 2px solid;
 
 
-}
-#tcr{
-    padding-left:  50px;
-    margin-top: 100px;
-   padding-top: 20px;
-
-    height:600px;
-display: block;
-background-color: FloralWhite;
 
 }
-#img-user{
+.about .left-side .img  {
     height: 350px;
     width: 350px;
     border-radius: 50%;
 }
-p{
-margin-top: 20px;
+
+
+.about .right-side {
+    padding-left: 50px;
+    margin-top: 75px;
+    padding-top: 20px;
+    padding-right: 50px;
+    height: 600px;
+    display: block;
+   
+
+}
+/*#endregion About */
+
+/*#region Portfolio*/
+.portfolio {
+    width: auto;
+    height: 900px;
+    display: block;
+    background-color:  rgba(30, 0, 60, 0.2);
+
+}
+/*#endregion Portfolio*/
+
+/*#region Contact*/
+.contact {
+    height: 900px;
+    display: block;
+    background-color: white;
+}
+/*#endregion Contact*/
+
+
+
+.svg{
+
+    background-color:black;
+    width: 100%;
+    height: 900px;
+    position: fixed;
+    top:0px;
+   }
+   .content {
+    
+    width: 100%;
+ 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+       
+
+.active {
+    color: black;
+    background-color: white;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

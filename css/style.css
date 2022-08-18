@@ -1,11 +1,3 @@
-
-
-@font-face {
-    font-family: 'starwars';
-    src: url('C:\Github\My Site\My-Portfolio-Web-Site-\fonts\star-jedi\Starjedi.ttf') format('truetype');
-  }
-
-
 /*#region html*/
 html{
     scroll-behavior:auto;

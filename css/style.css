@@ -90,8 +90,8 @@ li a {
  
 }
 img {
-width: 30px;
-height: 30px;
+width: 50px;
+height: 50px;
 }
 .home-content>h1 {
 
@@ -251,7 +251,15 @@ height: 30px;
 
 
 
+@media(max-width:767px){
+    img{
 
+        width: 30px;
+        height: 30px;
+
+    } 
+    
+     }
 
 
 

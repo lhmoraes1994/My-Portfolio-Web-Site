@@ -10,8 +10,8 @@ function teste(){
     
     var index = Math.floor(Math.random() * 2999);
    var i1 = Math.floor(Math.random() * 2999);
-    var rx= Math.floor(Math.random() * 2000);
-    var ry= Math.floor(Math.random() * 750);
+    var rx= Math.floor(Math.random() * window.screen.width);
+    var ry= Math.floor(Math.random() * window.screen.height);
     let circTr = arr[index];
     let circAttr = arr[i1];
     let size = Math.floor(Math.random() * 7)/10;

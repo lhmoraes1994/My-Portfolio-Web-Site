@@ -251,7 +251,7 @@ height: 50px;
 
 
 
-@media(max-width:767px){
+@media(min-width:577px)and (max-width:767px){
     img{
 
         width: 30px;
@@ -260,6 +260,16 @@ height: 50px;
     } 
     
      }
+
+     @media(max-width:576px){
+        img{
+    
+            width: 30px;
+            height: 30px;
+    
+        } 
+        
+         }
 
 
 

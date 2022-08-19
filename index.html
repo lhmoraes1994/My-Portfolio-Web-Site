@@ -179,8 +179,8 @@ var arr=[];
 
 for(let i=0;i<10000;i++){
 
-var rx= Math.floor(Math.random() * 2000);
-var ry= Math.floor(Math.random() * 900);
+    var rx= Math.floor(Math.random() * window.screen.width);
+var ry= Math.floor(Math.random() * window.screen.height);
 var size= Math.floor(Math.random() * 3)/10;
 arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
 
@@ -189,8 +189,8 @@ arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr(
 }
 for(let i=0;i<5000;i++){
 
-var rx= Math.floor(Math.random() * 2000);
-var ry= Math.floor(Math.random() * 900);
+    var rx= Math.floor(Math.random() * window.screen.width);
+var ry= Math.floor(Math.random() * window.screen.height);
 var size= Math.floor(Math.random() * 5)/100;
 arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
 
@@ -199,8 +199,8 @@ arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr(
 }
 for(let i=0;i<1000;i++){
 
-var rx= Math.floor(Math.random() * 2000);
-var ry= Math.floor(Math.random() * 900);
+var rx= Math.floor(Math.random() * window.screen.width);
+var ry= Math.floor(Math.random() * window.screen.height);
 var size= Math.floor(Math.random() * 10)/10;
 arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
 

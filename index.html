@@ -176,10 +176,14 @@ svg.attr('fill','red');
 
 var arr=[];
 
+var stars_m_count = 7000 * (window.screen.width* window.screen.height)/1440000;
+var stars_sm_count = 15000 * (window.screen.width* window.screen.height)/1440000;
+var stars_l_count = 1000 * (window.screen.width* window.screen.height)/1440000;
 
-for(let i=0;i<10000;i++){
 
-    var rx= Math.floor(Math.random() * window.screen.width);
+for(let i=0;i<stars_m_count;i++){
+
+var rx= Math.floor(Math.random() * window.screen.width);
 var ry= Math.floor(Math.random() * window.screen.height);
 var size= Math.floor(Math.random() * 3)/10;
 arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
@@ -187,7 +191,7 @@ arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr(
 
 
 }
-for(let i=0;i<5000;i++){
+for(let i=0;i<stars_sm_count;i++){
 
     var rx= Math.floor(Math.random() * window.screen.width);
 var ry= Math.floor(Math.random() * window.screen.height);
@@ -202,7 +206,7 @@ for(let i=0;i<1000;i++){
 var rx= Math.floor(Math.random() * window.screen.width);
 var ry= Math.floor(Math.random() * window.screen.height);
 var size= Math.floor(Math.random() * 10)/10;
-arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
+arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'yellow'));
 
 
 

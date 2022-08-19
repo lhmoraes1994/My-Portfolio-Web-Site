@@ -5,7 +5,7 @@ function aaa(t){
     alert(t);
 }
 function teste(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<3;i++){
 
     
     var index = Math.floor(Math.random() * 2999);
@@ -18,8 +18,8 @@ function teste(){
     
 
    
-    circAttr.transition().duration(2000).ease(d3.easeCircleIn).attr('r', size);
-    circTr.transition().duration(2000).ease(d3.easeCircleIn).attr('r', 0.5).attr('cy',ry).attr('cx',rx);
+    circAttr.transition().duration(4000).ease(d3.easeLinear).attr('r', size).attr('r',0.5);
+    circTr.transition().duration(4000).ease(d3.easeLinear).attr('r', 0.5).attr('cy',ry).attr('cx',rx);
     
     }
 
@@ -30,5 +30,5 @@ window.onload = function(){
 
     $("#home-bt").addClass("active").attr("style","color:black");
 
-    window.setInterval(teste, 2000);
+    window.setInterval(teste, 5000);
 }

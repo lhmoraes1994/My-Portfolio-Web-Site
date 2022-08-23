@@ -41,11 +41,11 @@ $(window).scroll(function(){
    if (lastId !== id) {
        lastId = id;
        // Set/remove active class
-       menuItems.removeClass("active").end().filter("[href='#"+id+"']");
+       menuItems.removeClass("nav-active").end().filter("[href='#"+id+"']");
        menuItems.attr("style","color:DarkGray").end().filter("[href='#"+id+"']");
        
 
-       menuItems.filter("[href='#"+id+"']").addClass("active").attr("style","color:black");
+       menuItems.filter("[href='#"+id+"']").addClass("nav-active").attr("style","color:black");
        
    }                   
 });

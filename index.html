@@ -122,24 +122,96 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-            <div class="row">
 
-                <p>portfolio</p>
 
+            <center>
+                <h1>My projects</h1>
+            </center>
+            <div class="portfolio-content row">
+                <div class="col-md-4 col">
+                    <div class="project">
+                        <div class="project-art">
+                            <img src="./content/embreve.jpg" alt="m bre" style="height:100%; width: 100%;">
+                        </div>
+                        <div class="project-description">
+                         <h4>Projeto teste</h4>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio officia quod, v</p>
+                          <a href="#teste">Show More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col">
+                    <div class="project">
+                        <div class="project-art">
+                            <img src="./content/embreve.jpg" alt="m bre" style="height:100%; width: 100%;">
+                        </div>
+                        <div class="project-description">
+                            <h4>Projeto teste</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio officia quod, v</p>
+                             <a href="#teste">Show More</a>
+                           </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col">
+                    <div class="project">
+                        <div class="project-art">
+                            <img src="./content/embreve.jpg" alt="m bre" style="height:100%; width: 100%;">
+                        </div>
+                        <div class="project-description">
+                            <h4>Projeto teste</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio officia quod, v</p>
+                             <a href="#teste">Show More</a>
+                           </div>
+                    </div>
+                </div>
 
             </div>
 
 
+            <div id="minhaDiv" class="portfolio-content-extra row">
+
+                <div class="col-md-4 col">
+                    <div class="project">
+                        <div class="project-art">
+                            <img src="./content/embreve.jpg" alt="m bre" style="height:100%; width: 100%;">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-4 col">
+                    <div class="project">
+                        <div class="project-art">
+                            <img src="./content/embreve.jpg" alt="m bre" style="height:100%; width: 100%;">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col">
+                    <div class="project">
+                        <div class="project-art">
+                            <img src="./content/embreve.jpg" alt="m bre" style="height:100%; width: 100%;">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <center> <input type="button" href="#portfolio" id="bt" onclick="Mudarestado('minhaDiv');"
+                    value='Mostrar Mais'"></input> </center> 
 
         </section>
 
-        <section class="contact" id="contact">
-            <div class="row">
+        <section class=" contact" id="contact">
+                <div class="row">
 
-                <p>portfolio</p>
+                    <p>portfolio</p>
 
 
-            </div>
+                </div>
 
 
         </section>
@@ -169,7 +241,23 @@
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
+    function Mudarestado(el) {
 
+        var display = document.getElementById(el).style.display;
+
+        if (display == "none" || display == "") {
+            document.getElementById(el).style.display = 'flex';
+            document.getElementById("bt").value = "Mostrar Menos";
+
+        }
+
+        else {
+            window.location.href = "#portfolio";
+            document.getElementById(el).style.display = 'none';
+            document.getElementById("bt").value = "Mostrar Mais";
+        }
+
+    }
 
     svg = d3.select("#svg").append("svg").attr("height", 900).attr("width", window.screen.width).attr('stroke', 'white').attr('stroke-width', 1);
 
@@ -240,7 +328,7 @@
 
 
         }
-        
+
         arr.push(svg.append('circle').attr('r', size).attr('cx', rx).attr('cy', ry).attr('fill', color));
 
 

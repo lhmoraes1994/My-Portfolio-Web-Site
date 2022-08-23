@@ -1,6 +1,7 @@
 /*#region html*/
-html{
-    scroll-behavior:auto;
+html,body{
+    scroll-behavior:smooth;
+    height: 100%;
 }
 body {
     overflow: auto;
@@ -52,9 +53,7 @@ li a {
 /*#endregion row*/
 
 /*#region Row*/
-.row {
-    padding-right: 50px;
-}
+
 /*#endregion Row*/
 
 /*#region Home*/
@@ -65,8 +64,8 @@ li a {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 900px;
-   
+    min-height: 100vh;
+
 
 
 
@@ -83,13 +82,8 @@ li a {
    
 
 }
-.home-content {
-  
 
-    
- 
-}
-img {
+.home-content img {
 width: 50px;
 height: 50px;
 }
@@ -158,23 +152,22 @@ height: 50px;
 /*#region About*/
 
 .about {
+   
     text-align: center;
     color: white;
     width: auto;
-    height: 800px;
-    display: block;
+   min-height: 100vh;
     background-color:  rgba(40, 0, 0, 0.2);
 
-    background-repeat: no-repeat;
-    Background-size: cover;
-    background-position: center;
+ 
+
+
 
 }
 .about .left-side {
 
 
     margin-top: 75px;
-    height: 600px;
     padding-top: 110px;
     display: block;
     border-right: gray 2px solid;
@@ -194,7 +187,6 @@ height: 50px;
     margin-top: 75px;
     padding-top: 20px;
     padding-right: 50px;
-    height: 600px;
     display: block;
    
 
@@ -204,21 +196,94 @@ height: 50px;
 /*#region Portfolio*/
 .portfolio {
     width: auto;
-    height: 900px;
+    min-height: 100vh;
+    padding-top: 30px;
+
+    color: white;
+    background-color:  rgba(23, 2, 29, 0.4);
+
+    scroll-behavior:smooth;
+
+}
+.portfolio .portfolio-content{
+    padding-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+   
+}
+.portfolio .col{
+min-width: 250px;
+height: 500px;
+
+}
+.project{
+    box-sizing: border-box;
     display: block;
-    background-color:  rgba(30, 0, 60, 0.2);
+
+padding-top: 5px;
+margin-left: auto;
+margin-right: auto;
+ width: 99%;
+ height:96%;
+ background-color: rgba(65, 60, 60, 0.2);
+ 
+
+}
+.project-art{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+   
+    height: 70%;
+    background-color: black;
+}
+
+.portfolio .portfolio-content-extra{
+    padding-top: 40px;
+    align-items: center;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+
+
+   
+}
+
+.project-description{
+    padding-top: 5px;;
+    text-align:  center;
+    width: 96%;
+ 
+    margin-left: auto;
+    margin-right: auto;
+
+   
 
 }
 /*#endregion Portfolio*/
 
 /*#region Contact*/
 .contact {
-    height: 900px;
+    width: auto;
+    min-height: 100vh;
     display: block;
-    background-color: white;
+    background-color: yellow;
 }
 /*#endregion Contact*/
-
 
 
 .svg{
@@ -240,7 +305,7 @@ height: 50px;
    }
        
 
-.active {
+   .nav-active {
     color: black;
     background-color: white;
 
@@ -248,11 +313,42 @@ height: 50px;
 }
 
 
+.carousel {
+    background-color:transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+  
+   
+}
+.card-body{
+    color: white;
+    background-color: transparent;
+}
+.card{
 
+background-color:  transparent;
+}
+.portfolio h1 {
+
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    text-shadow: wheat;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.071;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;  
+    float: auto;
+
+}
 
 
 @media(min-width:577px)and (max-width:767px){
-    img{
+    .home-content img{
 
         width: 30px;
         height: 30px;
@@ -266,8 +362,13 @@ height: 50px;
     
             width: 30px;
             height: 30px;
+
     
         } 
+       .col{
+  width: 100px
+
+       } 
         
          }
 

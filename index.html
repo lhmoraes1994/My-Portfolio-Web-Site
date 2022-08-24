@@ -246,7 +246,7 @@
 
 d3.xml('linkedin-icon.svg')
     .then(data => {
-        d3.select('contact-content').node().append(data.documentElement)
+        d3.select('#contact-content').node().append(data.documentElement)
     })
 
 

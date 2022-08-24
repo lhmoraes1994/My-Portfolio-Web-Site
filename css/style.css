@@ -421,7 +421,18 @@ background-color:  transparent;
   width: 100px
 
        } 
-        
+       #icones {
+   
+        width: 500px;
+        height: 50px;
+        position: fixed;
+        top: 85vh;
+        right: 2%;
+       
+      
+       
+    
+    }
          }
 
 

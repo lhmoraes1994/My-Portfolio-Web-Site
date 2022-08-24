@@ -207,7 +207,9 @@
 
         <section class=" contact" id="contact">
                 <div class="row">
-
+                    <div class="contact-content" id="contact-content">
+                        
+                    </div>
                     <p>portfolio</p>
 
 
@@ -241,6 +243,14 @@
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
+
+d3.xml('linkedin-icon.svg')
+    .then(data => {
+        d3.select('contact-content').node().append(data.documentElement)
+    })
+
+
+
     function Mudarestado(el) {
 
         var display = document.getElementById(el).style.display;

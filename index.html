@@ -241,14 +241,13 @@
 </body>
 
 
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
 
-d3.xml('linkedin-icon.svg')
-    .then(data => {
-        d3.select('#contact-content').node().append(data.documentElement)
-    })
-
+d3.xml('https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/files.zevross.org/blog/d3_external_svgs/load_svg/leaves/maple_illustration.svg')
+  .then(data => {
+    d3.select("#contact-content").node().append(data.documentElement)
+  });
 
 
     function Mudarestado(el) {

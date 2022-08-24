@@ -24,6 +24,7 @@ menuItems.click(function(e){
 // Bind to scroll
 $(window).scroll(function(){
 
+
    // Get container scroll position
    var fromTop = $(this).scrollTop()+topMenuHeight;
  
@@ -47,5 +48,23 @@ $(window).scroll(function(){
 
        menuItems.filter("[href='#"+id+"']").addClass("nav-active").attr("style","color:black");
        
-   }                   
+   }     
+         
 });
+var scrollTimer = -1;
+function bodyScroll() {
+
+  var icons= document.getElementById("icones");
+  icons.style.opacity=0.2;
+
+  if (scrollTimer != -1)
+    clearTimeout(scrollTimer);
+
+  scrollTimer = window.setTimeout("scrollFinished()", 500);
+}
+
+function scrollFinished() {
+
+  var icons= document.getElementById("icones");
+  icons.style.opacity=1;
+}

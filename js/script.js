@@ -54,7 +54,7 @@ $(window).scroll(function(){
 var scrollTimer = -1;
 function bodyScroll() {
 
-  var icons= document.getElementById("icones");
+  var icons= document.getElementById("contact-icons");
   icons.style.opacity=0.2;
 
   if (scrollTimer != -1)
@@ -65,6 +65,6 @@ function bodyScroll() {
 
 function scrollFinished() {
 
-  var icons= document.getElementById("icones");
+  var icons= document.getElementById("contact-icons");
   icons.style.opacity=1;
 }
